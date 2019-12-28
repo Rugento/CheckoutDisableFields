@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Customer\Model\Address\CompositeValidator">
+        <arguments>
+            <argument name="validators" xsi:type="array">
+                <item name="general" xsi:type="object">Rugento\CheckoutDisableFields\Model\Address\Validator\General</item>
+                <item name="country" xsi:type="object">Rugento\CheckoutDisableFields\Model\Address\Validator\Country</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

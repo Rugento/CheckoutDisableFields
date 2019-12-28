@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="checkout_disable_fields" translate="label" sortOrder="1000" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Disable Checkout Fields</label>
+            <tab>sales</tab>
+            <resource>Magento_Sales::config_sales</resource>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="1">
+                <label>General Configuration</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="fields" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="1">
+                <label>Fields Configuration</label>
+                <field id="firstname" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Firstname</label>
+                    <source_model>Rugento\CheckoutDisableFields\Model\Adminhtml\Source\Status</source_model>
+                </field>
+                <field id="lastname" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Lastname</label>
+                    <source_model>Rugento\CheckoutDisableFields\Model\Adminhtml\Source\Status</source_model>
+                </field>
+                <field id="telephone" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Telephone</label>
+                    <source_model>Rugento\CheckoutDisableFields\Model\Adminhtml\Source\Status</source_model>
+                </field>
+                <field id="country_id" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Country</label>
+                    <source_model>Rugento\CheckoutDisableFields\Model\Adminhtml\Source\Status</source_model>
+                </field>
+                <field id="region_id" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Region</label>
+                    <source_model>Rugento\CheckoutDisableFields\Model\Adminhtml\Source\Status</source_model>
+                </field>
+                <field id="city" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>City</label>
+                    <source_model>Rugento\CheckoutDisableFields\Model\Adminhtml\Source\Status</source_model>
+                </field>
+                <field id="postcode" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Postcode</label>
+                    <source_model>Rugento\CheckoutDisableFields\Model\Adminhtml\Source\Status</source_model>
+                </field>
+                <field id="street" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Street</label>
+                    <source_model>Rugento\CheckoutDisableFields\Model\Adminhtml\Source\Status</source_model>
+                </field>
+            </group>
+            <group id="sort_order" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="1">
+                <label>Fields Sort Order</label>
+                <field id="firstname" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Firstname</label>
+                    <validate>validate-not-negative-number</validate>
+                </field>
+                <field id="lastname" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Lastname</label>
+                    <validate>validate-not-negative-number</validate>
+                </field>
+                <field id="telephone" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Telephone</label>
+                    <validate>validate-not-negative-number</validate>
+                </field>
+                <field id="country_id" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Country</label>
+                    <validate>validate-not-negative-number</validate>
+                </field>
+                <field id="region_id" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Region</label>
+                    <validate>validate-not-negative-number</validate>
+                </field>
+                <field id="city" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>City</label>
+                    <validate>validate-not-negative-number</validate>
+                </field>
+                <field id="postcode" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Postcode</label>
+                    <validate>validate-not-negative-number</validate>
+                </field>
+                <field id="street" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Street</label>
+                    <validate>validate-not-negative-number</validate>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
