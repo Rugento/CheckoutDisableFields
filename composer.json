@@ -2,7 +2,7 @@
   "name": "rugento/checkoutdisablefields",
   "description": "",
   "require": {
-    "magento/framework": "102.*"
+    "magento/framework": "102.*|103.*"
   },
   "suggest": {
   },
